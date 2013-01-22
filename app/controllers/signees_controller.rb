@@ -44,7 +44,7 @@ class SigneesController < ApplicationController
 
     respond_to do |format|
       if @signee.save
-        format.html { redirect_to @signee, notice: 'Signee was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Gracias por registrarte!' }
         format.json { render json: @signee, status: :created, location: @signee }
       else
         format.html { render action: "new" }
