@@ -44,6 +44,7 @@ class SigneesController < ApplicationController
 
     respond_to do |format|
       if @signee.save
+        SigneeMailer.welcome_email(@signee).deliver
         format.html { redirect_to root_path, notice: 'Gracias por registrarte!' }
         format.json { render json: @signee, status: :created, location: @signee }
       else
