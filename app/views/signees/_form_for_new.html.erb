@@ -1,4 +1,4 @@
 <%= form_for @signee, :html => { :class => 'form-inline' } do |f| %>
-  <%= f.email_field :email, :class => 'text_field', placeholder: "Email" %>
   <%= f.submit "Inscribir", :class => 'btn btn-primary btn-large' %>
+  <span><%= f.email_field :email, :class => 'text_field', placeholder: "Email" %></span>
 <% end %>
