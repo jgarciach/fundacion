@@ -16,7 +16,7 @@
       <tr>
         <td><%= link_to signee.id, signee_path(signee) %></td>
         <td><%= signee.email %></td>
-        <td><%=l signee.created_at %></td>
+        <td><%=l signee.created_at.in_time_zone %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_signee_path(signee), :class => 'btn btn-mini' %>
