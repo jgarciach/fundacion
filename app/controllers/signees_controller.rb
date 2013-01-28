@@ -48,7 +48,7 @@ class SigneesController < ApplicationController
         format.html { redirect_to root_path, notice: 'Gracias por registrarte!' }
         format.json { render json: @signee, status: :created, location: @signee }
       else
-        format.html { render action: "new" }
+        format.html { redirect_to root_path, error: 'Oops!' }
         format.json { render json: @signee.errors, status: :unprocessable_entity }
       end
     end

@@ -31,6 +31,9 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 gem 'jquery-rails'
 
+#HTML, XML, SAX parser. Searches documents via XPath or CSS3 selectors.
+gem 'nokogiri'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
