@@ -1,4 +1,6 @@
 Fundacion::Application.routes.draw do
+  devise_for :admins
+
   resources :signees
 
 

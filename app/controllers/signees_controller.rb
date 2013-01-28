@@ -1,4 +1,6 @@
 class SigneesController < ApplicationController
+  before_filter :authenticate_admin!, only: [ :index, :destroy ]
+
   # GET /signees
   # GET /signees.json
   def index
