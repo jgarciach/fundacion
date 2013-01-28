@@ -93,6 +93,8 @@ hr {
 
 form#new_signee {
   margin: 0;
+  padding: 1px;
+  overflow: hidden;
 }
 
 form#new_signee span {
