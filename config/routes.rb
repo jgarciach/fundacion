@@ -1,6 +1,5 @@
 Fundacion::Application.routes.draw do
-  devise_for :admins, :controllers => {:registrations => "registrations"}
-
+  devise_for :admins
   resources :signees
 
 
